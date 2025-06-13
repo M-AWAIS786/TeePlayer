@@ -1,8 +1,8 @@
 [build]
-  publish = "dist"
+  publish = "web"
 
 [dev]
-  publish = "dist"
+  publish = "web"
   command = "npm run server"
   
 
