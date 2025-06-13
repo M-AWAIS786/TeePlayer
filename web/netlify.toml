@@ -1,25 +1,7 @@
 [build]
   publish = "web"
 
-[dev]
-  publish = "web"
-  command = "npm run server"
-  
-
 [[redirects]]
-  from = "/admin"
-  to = "/admin"
+  from = "/*"
+  to = "/index.html"
   status = 200
-
-
-[[redirects]]
-  from = "/video/*"
-  to = "/video-not-found"
-  status =404
-
-
-[[redirects]]
-  from = "*"
-  to = "/not-found"
-  status = 404
-
