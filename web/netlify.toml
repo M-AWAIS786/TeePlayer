@@ -1,4 +1,25 @@
+[build]
+  publish = "dist"
+
+[dev]
+  publish = "dist"
+  command = "npm run server"
+  
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status =200
+  from = "/admin"
+  to = "/admin"
+  status = 200
+
+
+[[redirects]]
+  from = "/video/*"
+  to = "/video-not-found"
+  status =404
+
+
+[[redirects]]
+  from = "*"
+  to = "/not-found"
+  status = 404
+
